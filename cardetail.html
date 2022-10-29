@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="carddetail.css">
+    </head>
+    <body>
+        <div class="main">
+            <img src="images/bg-main-desktop.png">
+       <div class="card1">
+        <svg class="svg1" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+        <img src="images/bg-card-front.png">
+        <span id="text1"></span>
+        <span id="text2"></span>
+        <span id="text3">00</span>
+        <span id="slash">/</span>
+        <span id="text5">00</span>
+</div>
+<div class="card2">
+    <img src="images/bg-card-back.png">
+ <span id="text4"> 000</span>
+</div>
+<div class="logindetails" id="carddetails">
+ <span class="logintext"> Cardholder Name</span><br>
+  <input type="text" placeholder="e.g. Jane Appleseed" id="1" class="textbox" size="41" oninput="inputname()"> <br>
+  <span class="errorname   colorit"></span><br><br>
+
+  <span class="logintext">Card Number</span><br>
+  <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="2" class="textbox" size="41" oninput="inputnum()"><br>
+  <span class="errornum colorit"></span><br>
+  
+
+  <table><tr><td><span class="logintext">Exp. Date (MM/YY)</span></td><td> <span class="logintext">CVC</span></td></tr><br>
+ <tr><td><input type="text" placeholder="MM" size="5"id="3" class="textbox" maxlength="2" oninput="inputmm()">
+  <input type="text" placeholder="YY" size="5"id="4" class="textbox" maxlength="2" oninput="inputyy()"></td>
+
+ 
+  <td><input type="text" placeholder=" e.g. 123" maxlength="3" id="5" class="textbox" oninput="inputcvc()"></td></td></tr>
+<tr><td><span class="mm colorit" ></span><span class="yy colorit" id="errormm"></span></td>
+  <td><span class="errorcvc  colorit"></span></td></tr></table>
+<br>
+
+  <button class="btn">Confirm</button>
+</div>
+  <!-- Completed state start -->
+<div class="thankyou" id="hidden">
+    <img src="images/icon-complete.svg"><br>
+ <span class="thankstext"> Thank you!</span><br>
+  <span class="thanksunder">We've added your card details</span>
+  <button class="btn" id="button1">Continue</button>
+</div></div>
+        <script src="carddetail.js"></script>
+    </body>
+</html>
